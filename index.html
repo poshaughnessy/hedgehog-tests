@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hedgehog Tests</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="hedgehog1-obj" src="models/hedgehog1/Mesh_Hedgehog.obj"></a-asset-item>
+        <a-asset-item id="hedgehog1-mtl" src="models/hedgehog1/Mesh_Hedgehog.mtl"></a-asset-item>
+        <a-asset-item id="hedgehog2-obj" src="models/hedgehog2/hedge.obj"></a-asset-item>
+        <a-asset-item id="hedgehog2-mtl" src="models/hedgehog2/hedge.mtl"></a-asset-item>
+      </a-assets>
+      <!--<a-entity obj-model="obj: #hedgehog1-obj; mtl: #hedgehog1-mtl" position="-5 0 -5"></a-entity>-->
+      <a-sky color="#9457b3"></a-sky>
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.8" position="0 3 0"></a-entity>
+      <a-entity light="type: directional; color: #FFF; intensity: 0.8" position="0 3 -2"></a-entity>
+      <a-entity obj-model="obj: #hedgehog2-obj; mtl: #hedgehog2-mtl" position="0 1.5 -0.4" rotation="0 30 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
